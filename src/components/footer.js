@@ -6,12 +6,12 @@ class Footer extends Component {
         return (
             <div>
 
-                <Footer>
+                
                     <p>
                     {this.props.message}
                     </p>
                     
-                    </Footer>
+                    
             </div>
         );
     }

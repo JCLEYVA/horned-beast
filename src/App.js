@@ -2,18 +2,34 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header';
 import Main from './components/main';
 import Footer from './components/footer';
-import imageUrls from './components/imageUrls.json';
+import { Component } from 'react';
+import allBeasts from './components/allBeasts.json';
 
-  function App() {
+ class App extends Component {
+    constructor(props) {
+              super(props);
+              this.state ={
+                  heading: "Make your best opinions known",
+                  message: "Your opinion counts!",
+              }
+            }
+            render() {
+
+
     return (
       <>
-      <Header title="Baseball Horns: A Team of Beastly Athletes" />
-      <Main heading="Make your best opinion known!" imageUrls={imageUrls} />
-      <Footer message="You opinion counts!" />
-      
+    
+      <Header title="Baseball Horns: A Team of Beastly Athlete" /> 
+      <Main heading={this.state.heading} allBeasts={allBeasts} />
+      <Footer message={this.state.message} />
+  
       </>
     );
+            }
   }
+
+
+
 //     super(props);
 //   this.state = {
 //     beasts: Data,
