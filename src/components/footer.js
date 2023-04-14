@@ -1,11 +1,27 @@
 
-import React from 'react';
+import { Component } from 'react';
 
-class Footer extends React.Component{
+class Footer extends Component {
     render() {
-      return (
-        <footer>Coriana Williams</footer>
-      )
+        return (
+            <div>
+
+                <Footer>
+                    <p>
+                    {this.props.message}
+                    </p>
+                    
+                    </Footer>
+            </div>
+        );
     }
 }
 export default Footer;
+
+//   <Header title="Horned Beast" />
+//         <Main allBeasts={this.state.beasts} display={this.display} />
+//         <SelectedBeast
+//           beast={this.state.selectedBeast}
+//           display={this.state.display}
+//           onHide={this.onHide}
+//         />
