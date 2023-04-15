@@ -100,3 +100,15 @@ Start time: 3pm
 Finish time: 4pm
 
 Actual time needed to complete:1 hr
+
+
+**Lab 03**
+Number and name of feature: Modal
+
+Estimate of time needed to complete: 3 hours
+
+Start time: 1200
+
+Finish time: 255
+
+Actual time needed to complete: 3 hours 
