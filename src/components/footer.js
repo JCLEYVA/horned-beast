@@ -17,11 +17,3 @@ class Footer extends Component {
     }
 }
 export default Footer;
-
-//   <Header title="Horned Beast" />
-//         <Main allBeasts={this.state.beasts} display={this.display} />
-//         <SelectedBeast
-//           beast={this.state.selectedBeast}
-//           display={this.state.display}
-//           onHide={this.onHide}
-//         />

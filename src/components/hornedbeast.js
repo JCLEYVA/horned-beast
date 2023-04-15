@@ -17,21 +17,34 @@ class HornedBeast extends Component {
 
     handleClick = () => {
         this.setState({ count: this.state.count + 1 });
-        this.props.clickState(this.props.singleBeast.title, this.props.singleBeast.image_url, this.props.singleBeast.description);
+        this.props.clickState(
+             this.props.singleBeast.title,
+             this.props.singleBeast.image_url, 
+             this.props.singleBeast.description
+             );
     }
-
+   
 
     render() {
         console.log (this.props.singleBeast.title)
         return (
             <div onClick={this.handleClick}>
                 <h2>{this.props.singleBeast.title}</h2>
-                <Image title={this.props.singleBeast.title} src={this.props.singleBeast.image_url} alt={this.props.singleBeast.description} fluid thumbnail />
+                <Image 
+                title={this.props.singleBeast.title} 
+                src={this.props.singleBeast.image_url} 
+                alt={this.props.singleBeast.description} 
+                fluid 
+                thumbnail
+                 />
                 <p>{this.props.singleBeast.description}</p>
                 <p>Favorites: {this.state.count} <HeartFill /></p>
             </div>
-        )
+
+            
+        );
     }
 }
 
 export default HornedBeast;
+
