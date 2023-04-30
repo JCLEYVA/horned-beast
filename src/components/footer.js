@@ -10,7 +10,7 @@ class Footer extends Component {
                     <p>
                     {this.props.message}
                     </p>
-                    
+                    <footer> Jeanette Leyva </footer>
                     
             </div>
         );
